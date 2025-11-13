@@ -1,0 +1,24 @@
+services:
+  node0:
+    build: .
+    environment:
+      - ID=0
+    networks:
+      - mutnet
+
+  node1:
+    build: .
+    environment:
+      - ID=1
+    networks:
+      - mutnet
+
+  node2:
+    build: .
+    environment:
+      - ID=2
+    networks:
+      - mutnet
+
+networks:
+  mutnet:
